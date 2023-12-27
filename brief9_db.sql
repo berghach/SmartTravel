@@ -136,12 +136,10 @@ INSERT INTO bus (regist_number, capacity, business_name) VALUES
 
 --@block
 CREATE TABLE route(
-    ID INT NOT NULL AUTO_INCREMENT,
     start_city VARCHAR(30),
     arrival_city VARCHAR(30),
     distance INT(5),
     duration time,
-    UNIQUE (ID),
     PRIMARY KEY(start_city, arrival_city),
     FOREIGN KEY(start_city) REFERENCES city(city_name),
     FOREIGN KEY(arrival_city) REFERENCES city(city_name)
