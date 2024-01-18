@@ -12,7 +12,7 @@
             "name": "brief9",
             "database": "brief9",
             "username": "root",
-            "askForPassword": true
+            "password": ""
         }
     ],
     "liveServer.settings.port": 5501
